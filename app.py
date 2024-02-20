@@ -12,6 +12,7 @@ print("cv2 version",cv2.__version__)
   
 @app.route('/')
 def index():
+   print("Hi welcome to video capture app")
    video =cv2.VideoCapture(0)
    facesdetect=cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')
   
