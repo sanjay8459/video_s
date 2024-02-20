@@ -4,6 +4,8 @@ from flask import Flask,request,render_template,redirect,url_for,flash
 
 app = Flask(__name__)
 
+print("cv2 version",cv2.__version__)
+
 
 def fetch():
   video =cv2.VideoCapture(0)
