@@ -1,5 +1,5 @@
 import cv2
-from flask import Flask,request,render_template,redirect,url_for,flash
+from flask import Flask,render_template
 
 
 app = Flask(__name__)
