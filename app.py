@@ -4,7 +4,7 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
-#print("cv2 version",cv2.__version__)
+print("cv2 version",cv2.__version__)
 
 
 #def fetch():
@@ -17,11 +17,7 @@ def index():
   
    while True:
     ret, frame=video.read()
-<<<<<<< HEAD
     gray=cv2.cvtColor(frame,cv2.COLOR_BGRA2GRAY)
-=======
-    gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
->>>>>>> e1ba59612da483d46886aecc08061a5b103bcaf1
     faces=facesdetect.detectMultiScale(gray,1.3 ,5)
 
     for (x,y,w,h) in faces:
