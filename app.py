@@ -4,7 +4,7 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
-print("cv2 version",cv2.__version__)
+#print("cv2 version",cv2.__version__)
 
 
 #def fetch():
