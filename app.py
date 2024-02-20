@@ -17,7 +17,7 @@ def index():
   
    while True:
     ret, frame=video.read()
-    gray=cv2.cvtColor(frame,cv2.COLOR_BGRA2GRAY)
+    gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
     faces=facesdetect.detectMultiScale(gray,1.3 ,5)
 
     for (x,y,w,h) in faces:
@@ -27,7 +27,7 @@ def index():
     if k==ord('q'):
        break
     
-       
+      
    video.release()
    cv2.destroyAllWindows()
   #fetch()
