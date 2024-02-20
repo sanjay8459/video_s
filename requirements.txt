@@ -1,4 +1,4 @@
 Flask
 gunicorn
 requests
-opencv-python
+opencv-python==4.9.0
