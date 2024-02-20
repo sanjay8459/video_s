@@ -1,4 +1,8 @@
 Flask
 gunicorn
 requests
+<<<<<<< HEAD
 opencv-python
+=======
+opencv-python
+>>>>>>> e1ba59612da483d46886aecc08061a5b103bcaf1
