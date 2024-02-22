@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 print("cv2 version",cv2.__version__)
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
+
 def gen_frames():  
     while True:
         success, frame = camera.read()  # read the camera frame
